@@ -71,7 +71,7 @@ function Footer() {
       <FooterContainer>
         <IconContainer>
           <IconImage src={IconBlue} alt="HakjongMate" />
-          <LogoName>LearningMate</LogoName>
+          <LogoName>HakjongMate</LogoName>
         </IconContainer>
         <InformationContainer>
           <Information>
