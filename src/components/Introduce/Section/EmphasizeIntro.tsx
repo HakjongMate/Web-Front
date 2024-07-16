@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 30px;
+  padding: 60px 30px;
   background-color: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
   max-width: 1080px;
@@ -15,14 +15,14 @@ const Container = styled.div`
 
 const Title = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   margin-bottom: 5px;
 `;
 
 const TitleLine = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 20px;
+  font-size: 24px;
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
   margin-bottom: 25px;
@@ -47,8 +47,8 @@ const Text = styled.div`
 
 const HighlightBoldText = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 24px;
-  margin-top: 10px;
+  font-size: 22px;
+  margin-top: 7px;
   text-align: center;
   color: #202594;
   line-height: 1.5;
@@ -56,7 +56,7 @@ const HighlightBoldText = styled.div`
 
 const BoldText = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 10px;
   text-align: center;
 `;

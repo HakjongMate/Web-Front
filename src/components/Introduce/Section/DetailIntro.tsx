@@ -12,28 +12,21 @@ const Container = styled.div`
 
 const Title = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 30px;
+  font-size: 28px;
 `;
 
 const TitleLine = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 30px;
+  font-size: 28px;
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
   margin-bottom: 25px;
 `;
 
-const Subtitle = styled.div`
-  font-family: "Pretendard-Bold";
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #000000;
-`;
-
 const Text = styled.div`
   font-family: "Pretendard-Regular";
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
   color: #000000;
   line-height: 1.5;
