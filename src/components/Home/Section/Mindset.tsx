@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import FirstMind from "../others/FirstMind";
+import SecondMind from "../others/SecondMind";
+import ThirdMind from "../others/ThirdMind";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 50px;
   width: 1080px;
 `;
 
@@ -95,6 +98,9 @@ function Mindset() {
         <BoldText>을 위한 올바른 방향을 제시합니다.</BoldText>
       </BoldContainer>
 
+      <FirstMind />
+      <SecondMind />
+      <ThirdMind />
 
       
     </Container>
