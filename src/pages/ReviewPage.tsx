@@ -3,6 +3,7 @@ import styled from "styled-components";
 import GradationIntro from "../components/Review/GradationIntro";
 import ReviewComponent from "../components/Review/ReviewComponent";
 import ReviewJson from "../assets/data/review.json";
+import SemiFooter from "../components/SemiFooter";
 
 interface Review {
   id: number;
@@ -49,6 +50,7 @@ const ReviewPage = () => {
           <ReviewComponent key={review.id} review={review} />
         ))}
       </ReviewContainer>
+      <SemiFooter />
     </Container>
   );
 };
