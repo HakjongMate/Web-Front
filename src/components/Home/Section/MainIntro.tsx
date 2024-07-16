@@ -19,17 +19,17 @@ const TextContainer = styled.div`
 const MainTextContainer = styled.div`
   display: flex;
   flex-direction: row;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 `;
 
 const MainText = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 30px;
+  font-size: 28px;
 `;
 
 const MainColorText = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 30px;
+  font-size: 28px;
   color: #202594;
   margin-left: 7px;
 `;
@@ -41,13 +41,13 @@ const DetailContainer = styled.div`
 
 const DetailText = styled.div`
   font-family: "Pretendard-Medium";
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 15px;
 `;
 
 const DetailColorText = styled.div`
   font-family: "Pretendard-SemiBold";
-  font-size: 22px;
+  font-size: 20px;
   color: #202594;
   margin-left: 7px;
   margin-right: 7px;
