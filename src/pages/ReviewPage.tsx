@@ -35,7 +35,7 @@ const ReviewContainer = styled.div`
   width: 100%;
   max-width: 800px;
   padding: 0 20px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 `;
 
 const ReviewPage = () => {

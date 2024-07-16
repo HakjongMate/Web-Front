@@ -19,7 +19,7 @@ const ReviewContainer = styled.div`
   max-width: 100%;
   background-color: white;
   padding: 20px;
-  margin: 10px 100px;
+  margin: 15px 100px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
@@ -53,11 +53,12 @@ const Date = styled.div`
 const Rating = styled.div`
   color: #202594;
   font-size: 20px;
+  margin-bottom: 10px;
 `;
 
 const Content = styled.div`
   font-size: 14px;
-  font-family: "Pretendard-Regular";
+  font-family: "Pretendard-Light";
   color: #000;
   line-height: 1.5;
 `;
