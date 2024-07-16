@@ -1,16 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  background-color: #F6F7FC;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #f6f7fc;
 `;
 
-const Title = styled.h1`
+const Title = styled.div`
   font-family: "Pretendard-Bold";
   font-size: 24px;
   margin-bottom: 10px;
@@ -18,7 +18,7 @@ const Title = styled.h1`
   padding: 5px;
 `;
 
-const Subtitle = styled.p`
+const Subtitle = styled.div`
   font-family: "Pretendard-Regular";
   font-size: 18px;
   margin-bottom: 30px;
@@ -45,8 +45,8 @@ const Label = styled.label`
 
 const Input = styled.input`
   width: 100%;
-  padding: 10px;
-  background-color: #F6F7FC;
+  padding: 10px 15px;
+  background-color: #f6f7fc;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-family: "Pretendard-Light";
@@ -55,9 +55,9 @@ const Input = styled.input`
 
 const TextArea = styled.textarea`
   width: 100%;
-  padding: 10px;
+  padding: 10px 15px;
   border: 1px solid #ddd;
-  background-color: #F6F7FC;
+  background-color: #f6f7fc;
   border-radius: 5px;
   font-family: "Pretendard-Light";
   font-size: 14px;
@@ -67,7 +67,7 @@ const TextArea = styled.textarea`
 `;
 
 const SubmitButton = styled.button`
-  width: 100%;
+  width: 400px;
   padding: 12px;
   background-color: #3730a3;
   color: white;
@@ -77,6 +77,7 @@ const SubmitButton = styled.button`
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 20px;
 
   &:hover {
     background-color: #2b2583;
@@ -84,25 +85,85 @@ const SubmitButton = styled.button`
 `;
 
 function ApplyPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    content: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // 유효성 검사
+    if (!formData.name) {
+      alert("성함을 입력해주세요.");
+      return;
+    }
+    if (!formData.phone) {
+      alert("연락처를 입력해주세요.");
+      return;
+    }
+    if (!formData.content) {
+      alert("상담내용을 입력해주세요.");
+      return;
+    }
+
+    // 모든 필드가 채워졌을 때
+    alert(
+      `신청이 완료되었습니다.\n\n성함: ${formData.name}\n연락처: ${formData.phone}\n상담내용: ${formData.content}`
+    );
+
+    // 폼 초기화
+    setFormData({ name: "", phone: "", content: "" });
+  };
+
   return (
     <PageContainer>
       <Title>수업 및 상담 신청</Title>
       <Subtitle>
-        상담 신청을 남겨주시면,<br />
+        상담 신청을 남겨주시면,
+        <br />
         순차적으로 카카오톡 메시지가 전달됩니다.
       </Subtitle>
-      <FormContainer>
+      <FormContainer onSubmit={handleSubmit}>
         <InputGroup>
           <Label>성함</Label>
-          <Input type="text" placeholder="고객님의 성함을 적어주세요." />
+          <Input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="고객님의 성함을 적어주세요."
+          />
         </InputGroup>
         <InputGroup>
           <Label>연락처</Label>
-          <Input type="tel" placeholder="고객님의 연락처를 적어주세요." />
+          <Input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            placeholder="고객님의 연락처를 적어주세요."
+          />
         </InputGroup>
         <InputGroup>
           <Label>상담내용</Label>
-          <TextArea placeholder="원하시는 상담의 내용을 입력해주세요" />
+          <TextArea
+            name="content"
+            value={formData.content}
+            onChange={handleChange}
+            placeholder="원하시는 상담의 내용을 입력해주세요"
+          />
         </InputGroup>
         <SubmitButton type="submit">상담 신청하기</SubmitButton>
       </FormContainer>
