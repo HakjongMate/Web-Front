@@ -10,6 +10,7 @@ const HomePageContainer = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #F6F7FC;
+  padding-bottom: 50px;
 `;
 
 function IntroducePage() {
