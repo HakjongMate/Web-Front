@@ -28,7 +28,7 @@ const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
 `;
 
 const RightContainer = styled.div`
@@ -39,26 +39,27 @@ const RightContainer = styled.div`
 `;
 
 const Author = styled.div`
-  font-size: 14px;
-  font-family: "Pretendard-Regular";
+  font-size: 12px;
+  font-family: "Pretendard-Light";
   color: #000;
 `;
 
 const Date = styled.div`
-  font-size: 14px;
-  font-family: "Pretendard-Regular";
+  font-size: 12px;
+  font-family: "Pretendard-Light";
   color: #000;
 `;
 
 const Rating = styled.div`
   color: #202594;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
+  padding: 
 `;
 
 const Content = styled.div`
   font-size: 14px;
-  font-family: "Pretendard-Light";
+  font-family: "Pretendard-Regular";
   color: #000;
   line-height: 1.5;
 `;
@@ -67,7 +68,7 @@ const ReviewComponent: React.FC<ReviewComponentProps> = ({ review }) => {
   return (
     <ReviewContainer>
       <LeftContainer>
-        <Rating>{"★".repeat(review.rating)}</Rating>
+        <Rating>{"★ ".repeat(review.rating)}</Rating>
         <Content>{review.content}</Content>
       </LeftContainer>
       <RightContainer>
