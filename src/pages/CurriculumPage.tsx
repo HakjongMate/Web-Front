@@ -7,6 +7,7 @@ import WhiteTwo from '../components/Curriculum/Others/WhiteTwo'
 import WhiteThree from '../components/Curriculum/Others/WhiteThree'
 import WhiteFour from '../components/Curriculum/Others/WhiteFour'
 import WhiteFive from '../components/Curriculum/Others/WhiteFive'
+import WhitePlus from '../components/Curriculum/Others/WhitePlus'
 
 const Container = styled.div`
   display: flex;
@@ -26,6 +27,7 @@ function CurriculumPage() {
       <WhiteThree />
       <WhiteFour />
       <WhiteFive />
+      <WhitePlus />
     </Container>
   )
 }
