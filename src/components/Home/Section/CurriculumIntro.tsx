@@ -56,7 +56,7 @@ const DetailBoldText = styled.div`
 `;
 
 const DetailText = styled.div`
-  font-family: "Pretendard-Regular";
+  font-family: "Pretendard-Light";
   font-size: 18px;
   margin-bottom: 5px;
 `;

@@ -13,14 +13,12 @@ interface MainReviewProps {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
   min-height: 250px;
   margin: 20px;
-  padding: 20px 35px;
+  padding: 40px 35px;
   background-color: #f6f7FC;
   border-radius: 30px;
-  padding: 20px 35px;
 `;
 
 const TextContainer = styled.div`
@@ -28,12 +26,12 @@ const TextContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 `;
 
 const AuthorText = styled.div`
   font-family: "Pretendard-Medium";
-  font-size: 20px;
+  font-size: 18px;
 `;
 
 const DateText = styled.div`
@@ -45,12 +43,13 @@ const RatingContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 `;
 
 const ContextText = styled.div`
-  font-family: "Pretendard-Regular";
+  font-family: "Pretendard-Light";
   font-size: 16px;
+  line-height: 1.5;
 `;
 
 function MainReview({ id, rating, author, date, content }: MainReviewProps) {

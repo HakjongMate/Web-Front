@@ -52,12 +52,12 @@ function Navbar() {
     <NavbarContainer>
       <IconContainer to="/">
         <IconImage src={IconBlue} alt="HakjongMate" />
-        <LogoName>LearningMate</LogoName>
+        <LogoName>HakjongMate</LogoName>
       </IconContainer>
 
       <OtherLinkContainer>
         <OtherLink to="/introduce">
-          러닝메이트 소개
+          학종메이트 소개
         </OtherLink>
         <OtherLink to="/curriculum">
           커리큘럼

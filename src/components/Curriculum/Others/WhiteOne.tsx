@@ -4,9 +4,9 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 50px 30px;
+  padding: 40px 30px;
   background-color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
   max-width: 1080px;
   min-width: 900px;

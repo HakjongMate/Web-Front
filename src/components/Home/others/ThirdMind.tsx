@@ -11,6 +11,7 @@ const Container = styled.div`
   margin: 30px 50px;
   padding: 30px 50px;
   background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
 `;
 
@@ -62,21 +63,21 @@ const MindsetImage = styled.img`
   margin: 0 10px;
 `;
 
-const DetailText = styled.div`
-  font-family: "Pretendard-Regular";
-  font-size: 20px;
-  margin-bottom: 5px;
-`;
-
 const Space = styled.div`
   margin-bottom: 30px;
+`;
+
+const DetailText = styled.div`
+  font-family: "Pretendard-Regular";
+  font-size: 18px;
+  margin-bottom: 5px;
 `;
 
 const DetailColorText = styled.div`
   color: #0f4abe;
   font-family: "Pretendard-SemiBold";
-  font-size: 22px;
-  margin-bottom: 7px;
+  font-size: 20px;
+  margin-bottom: 10px;
 `;
 
 function ThirdMind() {
