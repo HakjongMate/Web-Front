@@ -7,7 +7,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 1080px;
-  margin-top: 20px;
+  margin-top: 30px;
   padding-bottom: 50px;
 `;
 
@@ -16,12 +16,12 @@ const IntroTextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 const IntroBolderText = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 20px;
   border-bottom: 1px solid #202594;
   padding-bottom: 10px;
@@ -30,14 +30,14 @@ const IntroBolderText = styled.div`
 
 const IntroText = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 7px;
   color: #202594;
 `;
 
 const DetailText = styled.div`
   font-family: "Pretendard-Regular";
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
   text-align: center;
 `;
@@ -46,7 +46,7 @@ const StepContainer = styled.div`
   display: flex;
   justify-content: space-around;
   max-width: 1080px;
-  margin-top: 40px;
+  margin-top: 30px;
 `;
 
 const StepBox = styled.div`
@@ -59,19 +59,19 @@ const StepBox = styled.div`
 const StepNumber = styled.div`
   font-family: "Pretendard-Bold";
   font-size: 80px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   ${(props) => props.color && `color: ${props.color};`}
 `;
 
 const StepTitle = styled.div`
   font-family: "Pretendard-Bold";
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
 `;
 
 const StepDescription = styled.div`
-  font-family: "Pretendard-Regular";
+  font-family: "Pretendard-Light";
   font-size: 16px;
   text-align: center;
   line-height: 1.5;
