@@ -56,10 +56,9 @@ const Content = styled.div`
   margin-top: 8px;
   line-height: 1.5;
   margin-bottom: 10px;
-  margin-left: 30px;
 `;
 
-const WhiteOne = () => {
+function WhiteOne() {
   return (
     <Container>
       <TitleContainer>
