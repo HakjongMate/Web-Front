@@ -18,7 +18,7 @@ const StyledButton = styled.button`
   font-family: 'Pretendard-Bold';
   padding: 10px 20px;
   height: 50px;
-  width: 150px;
+  min-width: 150px;
   &:hover {
     background-color: #0d3a9e;
   }
