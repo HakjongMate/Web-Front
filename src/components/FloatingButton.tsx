@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Button = styled.button`
   position: fixed;
   bottom: 50px;
-  right: calc((100% - 1400px) / 2 - 40px); 
+  right: calc((100% - 1100px) / 2 - 50px); 
   width: 100px;
   height: 100px;
   border-radius: 50%;
