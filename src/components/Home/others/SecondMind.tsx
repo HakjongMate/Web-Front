@@ -60,20 +60,20 @@ const MindsetImage = styled.img`
   height: 320px;
 `;
 
+
 const DetailText = styled.div`
   font-family: "Pretendard-Regular";
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 5px;
 `;
 
 const DetailColorText = styled.div`
   color: #0f4abe;
   font-family: "Pretendard-SemiBold";
-  font-size: 22px;
-  margin-top: 30px;
+  font-size: 20px;
+  margin-top: 20px;
   margin-bottom: 10px;
 `;
-
 function SecondMind() {
   return (
     <Container>

@@ -7,7 +7,7 @@ const Container = styled.div`
   width: 1080px;
   border-radius: 20px;
   flex-direction: column;
-  margin: 30px 50px;
+  margin: 50px 50px 30px 50px;
   padding: 30px 50px;
   background-color: #ffffff;
   box-sizing: border-box; 
@@ -62,15 +62,15 @@ const MindsetImage = styled.img`
 
 const DetailText = styled.div`
   font-family: "Pretendard-Regular";
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 5px;
 `;
 
 const DetailColorText = styled.div`
   color: #0f4abe;
   font-family: "Pretendard-SemiBold";
-  font-size: 22px;
-  margin-top: 30px;
+  font-size: 20px;
+  margin-top: 20px;
   margin-bottom: 10px;
 `;
 

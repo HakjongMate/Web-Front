@@ -23,15 +23,15 @@ const IntroTextContainer = styled.div`
 
 const IntroText = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 7px;
 `;
 
 const IntroBolderText = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 7px;
-  border-bottom: 1px solid #202594;
+  border-bottom: 1px solid #000;
   padding-bottom: 10px;
 `;
 
@@ -40,7 +40,7 @@ const DetailContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 `;
 
 const DetailText = styled.div`
@@ -56,15 +56,16 @@ const BoldContainer = styled.div`
 `;
 
 const BoldText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-family: "Pretendard-SemiBold";
   align-self: center;
-  font-size: 24px;
+  font-size: 22px;
 `;
 
 const BoldColorText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-family: "Pretendard-SemiBold";
   align-self: center;
-  font-size: 24px;
+  font-size: 22px;
+  margin: 0 10px;
   color: #202594;
 `;
 
@@ -88,7 +89,7 @@ function Mindset() {
       </BoldContainer>
 
       <BoldContainer>
-        <BoldText>자체 연구﹒개발한 </BoldText>
+        <BoldText>자체 연구·개발한 </BoldText>
         <BoldColorText>"세특 필승 SUCCESS 공식"</BoldColorText>
         <BoldText>으로 지도하여</BoldText>
       </BoldContainer>
