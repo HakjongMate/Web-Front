@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import GradationIntro from '../components/Introduce/Section/GradationIntro'
+import GradationIntro from '../components/Curriculum/Section/GradationIntro'
 import DetailSection from '../components/Curriculum/Section/DetailSection'
 import WhiteOne from '../components/Curriculum/Others/WhiteOne'
 import WhiteTwo from '../components/Curriculum/Others/WhiteTwo'
