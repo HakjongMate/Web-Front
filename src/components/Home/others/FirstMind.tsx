@@ -10,6 +10,7 @@ const Container = styled.div`
   margin: 50px 50px 30px 50px;
   padding: 30px 50px;
   background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
   box-sizing: border-box; 
 `;
 
