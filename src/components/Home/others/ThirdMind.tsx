@@ -57,8 +57,9 @@ const ImageContainer = styled.div`
 `;
 
 const MindsetImage = styled.img`
-  width: 480px;
-  height: 250px;
+  width: 400px;
+  height: 230px;
+  margin: 0 10px;
 `;
 
 const DetailText = styled.div`
