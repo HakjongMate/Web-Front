@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-// use Material Icons - star
-import Star from '@material-ui/icons/Star';
+import StarIcon from '@mui/icons-material/Star'; 
 
 interface MainReviewProps {
   id: number;
@@ -63,7 +62,7 @@ function MainReview({ id, rating, author, date, content }: MainReviewProps) {
       </TextContainer>
       <RatingContainer>
         {[1, 2, 3, 4, 5].map((star, index) => (
-          <Star key={index} style={{ color: index < rating ? "#202594" : "#BDBDBD" }} />
+          <StarIcon key={index} style={{ color: index < rating ? "#202594" : "#BDBDBD" }} />
         ))}
       </RatingContainer>
       <ContextText>{content}</ContextText>

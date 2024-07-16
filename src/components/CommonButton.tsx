@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button as MuiButton } from '@material-ui/core';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -10,8 +9,10 @@ interface CommonButtonProps {
   children: React.ReactNode;
 }
 
-const StyledButton = styled(MuiButton)`
-  background-color: #0f4abe !important;
+const StyledButton = styled.button`
+  background-color: #0f4abe;
+  border: none;
+  border-radius: 10px;
   color: white;
   font-size: 15px;
   font-family: 'Pretendard-Bold';
@@ -19,7 +20,7 @@ const StyledButton = styled(MuiButton)`
   height: 50px;
   width: 150px;
   &:hover {
-    background-color: #0d3a9e !important; 
+    background-color: #0d3a9e;
   }
 `;
 
