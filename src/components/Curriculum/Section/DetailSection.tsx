@@ -7,6 +7,7 @@ const DetailContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 `;
 
 const IntroBolderText = styled.div`

@@ -6,6 +6,7 @@ const Container = styled.div`
   flex-direction: column;
   padding: 50px 30px;
   background-color: #ffffff;
+  margin-bottom: 30px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
   max-width: 1080px;
   min-width: 900px;
@@ -56,6 +57,7 @@ const Content = styled.div`
   margin-top: 8px;
   line-height: 1.5;
   margin-bottom: 10px;
+  margin-left: 30px;
 `;
 
 function WhiteOne() {
