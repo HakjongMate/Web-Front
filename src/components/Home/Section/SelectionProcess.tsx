@@ -8,6 +8,7 @@ const Container = styled.div`
   align-items: center;
   width: 1080px;
   margin-top: 20px;
+  padding-bottom: 50px;
 `;
 
 const IntroTextContainer = styled.div`
