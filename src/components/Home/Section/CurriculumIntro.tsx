@@ -89,7 +89,7 @@ function CurriculumIntro() {
           <StyledImage src={CurriculumImage} alt="Curriculum" />
         </ImageContainer>
         <ButtonContainer>
-          <CommonButton to="/curriculum-details" text="커리큘럼 자세히 보기 >" children={null} />
+          <CommonButton to="/curriculum" text="커리큘럼 자세히 보기 >" children={null} />
         </ButtonContainer>
       </Container>
     </WhiteContainer>
