@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import MainIntro from '../components/Section/Home/MainIntro';
-import Review from '../components/Section/Home/Review';
-import Mindset from '../components/Section/Home/Mindset';
-import SelectionProcess from '../components/Section/Home/SelectionProcess';
-import CurriculumIntro from '../components/Section/Home/CurriculumIntro';
+import MainIntro from '../components/Home/Section/MainIntro';
+import Review from '../components/Home/Section/Review';
+import Mindset from '../components/Home/Section/Mindset';
+import SelectionProcess from '../components/Home/Section/SelectionProcess';
+import CurriculumIntro from '../components/Home/Section/CurriculumIntro';
 import SemiFooter from '../components/SemiFooter';
 
 const HomePageContainer = styled.div`
