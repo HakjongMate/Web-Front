@@ -22,13 +22,15 @@ const IntroTextContainer = styled.div`
 `;
 
 const IntroText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-family: "Pretendard";
+  font-weight: 700;
   font-size: 28px;
   margin-bottom: 7px;
 `;
 
 const IntroBolderText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-family: "Pretendard";
+  font-weight: 700;
   font-size: 28px;
   margin-bottom: 7px;
   border-bottom: 1px solid #000;
@@ -44,7 +46,8 @@ const DetailContainer = styled.div`
 `;
 
 const DetailText = styled.div`
-  font-family: "Pretendard-Regular";
+  font-family: "Pretendard";
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 5px;
 `;
@@ -56,13 +59,15 @@ const BoldContainer = styled.div`
 `;
 
 const BoldText = styled.div`
-  font-family: "Pretendard-SemiBold";
+  font-family: "Pretendard";
+  font-weight: 600;
   align-self: center;
   font-size: 22px;
 `;
 
 const BoldColorText = styled.div`
-  font-family: "Pretendard-SemiBold";
+  font-family: "Pretendard";
+  font-weight: 600;
   align-self: center;
   font-size: 22px;
   margin: 0 10px;
@@ -102,8 +107,6 @@ function Mindset() {
       <FirstMind />
       <SecondMind />
       <ThirdMind />
-
-      
     </Container>
   );
 }

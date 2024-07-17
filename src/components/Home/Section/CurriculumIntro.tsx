@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
 import CommonButton from "../../CommonButton";
 import CurriculumImage from "../../../assets/icons/Home/curriculum.png";
 
@@ -30,7 +29,8 @@ const IntroTextContainer = styled.div`
 `;
 
 const IntroBolderText = styled.div`
-  font-family: "Pretendard-ExtraBold";
+  font-family: "Pretendard";
+  font-weight: 600;
   font-size: 24px;
   margin-bottom: 7px;
   color: #202594;
@@ -51,12 +51,14 @@ const Space = styled.div`
 `;
 
 const DetailBoldText = styled.div`
-  font-family: "Pretendard-SemiBold";
+  font-family: "Pretendard";
+  font-weight: 600;
   font-size: 18px;
 `;
 
 const DetailText = styled.div`
-  font-family: "Pretendard-Light";
+  font-family: "Pretendard";
+  font-weight: 300;
   font-size: 18px;
   margin-bottom: 5px;
 `;
@@ -79,8 +81,6 @@ const ButtonContainer = styled.div`
 `;
 
 function CurriculumIntro() {
-  const navigate = useNavigate();
-
   return (
     <WhiteContainer>
       <Container>
