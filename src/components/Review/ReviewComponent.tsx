@@ -40,14 +40,12 @@ const RightContainer = styled.div`
 
 const Author = styled.div`
   font-size: 12px;
-  font-family: "Pretendard-Light";
-  color: #000;
+  font-weight: 300;
 `;
 
 const Date = styled.div`
   font-size: 12px;
-  font-family: "Pretendard-Light";
-  color: #000;
+  font-weight: 300;
 `;
 
 const Rating = styled.div`
@@ -59,8 +57,7 @@ const Rating = styled.div`
 
 const Content = styled.div`
   font-size: 14px;
-  font-family: "Pretendard-Regular";
-  color: #000;
+  font-weight: 400;
   line-height: 1.5;
 `;
 

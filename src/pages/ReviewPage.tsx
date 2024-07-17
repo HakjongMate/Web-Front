@@ -22,7 +22,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 24px;
   margin-top: 50px;
   margin-bottom: 30px;
