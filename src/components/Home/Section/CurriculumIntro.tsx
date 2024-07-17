@@ -29,7 +29,6 @@ const IntroTextContainer = styled.div`
 `;
 
 const IntroBolderText = styled.div`
-  font-family: "Pretendard";
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 7px;
@@ -51,13 +50,11 @@ const Space = styled.div`
 `;
 
 const DetailBoldText = styled.div`
-  font-family: "Pretendard";
   font-weight: 600;
   font-size: 18px;
 `;
 
 const DetailText = styled.div`
-  font-family: "Pretendard";
   font-weight: 300;
   font-size: 18px;
   margin-bottom: 5px;

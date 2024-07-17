@@ -23,13 +23,11 @@ const MainTextContainer = styled.div`
 `;
 
 const MainText = styled.div`
-  font-family: "Pretendard";
   font-weight: 700;
   font-size: 28px;
 `;
 
 const MainColorText = styled.div`
-  font-family: "Pretendard";
   font-weight: 700;
   font-size: 28px;
   color: #202594;
@@ -42,14 +40,12 @@ const DetailContainer = styled.div`
 `;
 
 const DetailText = styled.div`
-  font-family: "Pretendard";
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 15px;
 `;
 
 const DetailColorText = styled.div`
-  font-family: "Pretendard";
   font-weight: 600;
   font-size: 20px;
   color: #202594;

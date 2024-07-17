@@ -20,7 +20,6 @@ const IntroTextContainer = styled.div`
 `;
 
 const IntroBolderText = styled.div`
-  font-family: "Pretendard";
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 20px;
@@ -30,7 +29,6 @@ const IntroBolderText = styled.div`
 `;
 
 const IntroText = styled.div`
-  font-family: "Pretendard";
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 7px;
@@ -38,7 +36,6 @@ const IntroText = styled.div`
 `;
 
 const DetailText = styled.div`
-  font-family: "Pretendard-Regular";
   font-size: 16px;
   margin-bottom: 5px;
   text-align: center;
@@ -59,7 +56,6 @@ const StepBox = styled.div`
 `;
 
 const StepNumber = styled.div`
-  font-family: "Pretendard";
   font-weight: 700;
   font-size: 80px;
   margin-bottom: 15px;
@@ -67,7 +63,6 @@ const StepNumber = styled.div`
 `;
 
 const StepTitle = styled.div`
-  font-family: "Pretendard";
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 25px;
@@ -75,7 +70,6 @@ const StepTitle = styled.div`
 `;
 
 const StepDescription = styled.div`
-  font-family: "Pretendard";
   font-weight: 300;
   font-size: 16px;
   text-align: center;
