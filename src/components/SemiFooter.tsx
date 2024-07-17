@@ -20,7 +20,7 @@ const FooterContent = styled.div`
 
 const Title = styled.div`
   font-size: 24px;
-  font-family: "Pretendard-ExtraBold";
+  font-weight: 600;
   color: white;
   margin-bottom: 10px;
 `;
@@ -30,7 +30,7 @@ const StyledButton = styled(Link)`
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  font-family: "Pretendard-SemiBold";
+  font-weight: 600;
   width: 150px;
   padding: 8px 16px;
   margin-top: 50px;

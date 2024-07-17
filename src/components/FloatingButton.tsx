@@ -13,7 +13,7 @@ const Button = styled.button`
   border: none;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  font-family: 'Pretendard-Bold';
+  font-weight: 700;
   font-size: 18px;
   color: white;
   display: flex;

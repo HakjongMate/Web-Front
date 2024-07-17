@@ -15,7 +15,7 @@ const StyledButton = styled.button`
   border-radius: 10px;
   color: white;
   font-size: 15px;
-  font-family: 'Pretendard-Bold';
+  font-weight: 700;
   padding: 10px 20px;
   height: 50px;
   min-width: 150px;
@@ -25,7 +25,7 @@ const StyledButton = styled.button`
 `;
 
 const Text = styled.div`
-  font-family: 'Pretendard-Bold';
+  font-weight: 700;
   font-size: 16px;
   color: white;
 `;

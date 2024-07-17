@@ -31,6 +31,7 @@ const IconImage = styled.img`
 
 const LogoName = styled.div`
   font-size: 24px;
+  font-family: "Pretendard";
   font-weight: 200;
   color: #202594;
 `;
