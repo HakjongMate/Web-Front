@@ -10,7 +10,6 @@ const GradientContainer = styled.div`
 `;
 
 const GradientText = styled.div`
-  font-family: 'Pretendard';
   font-weight: 700;
   font-size: 24px;
   color: white;
@@ -19,7 +18,6 @@ const GradientText = styled.div`
 `;
 
 const Subtitle = styled.div`
-  font-family: 'Pretendard';
   font-weight: 500;
   font-size: 18px;
   color: white;
