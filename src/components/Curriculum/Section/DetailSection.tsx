@@ -11,7 +11,7 @@ const DetailContainer = styled.div`
 `;
 
 const IntroBolderText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 28px;
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
@@ -19,7 +19,7 @@ const IntroBolderText = styled.div`
 `;
 
 const DetailText = styled.div`
-  font-family: "Pretendard-Regular";
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 15px;
   text-align: center;
