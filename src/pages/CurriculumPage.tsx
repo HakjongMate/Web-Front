@@ -8,6 +8,7 @@ import WhiteThree from '../components/Curriculum/Others/WhiteThree'
 import WhiteFour from '../components/Curriculum/Others/WhiteFour'
 import WhiteFive from '../components/Curriculum/Others/WhiteFive'
 import WhitePlus from '../components/Curriculum/Others/WhitePlus'
+import SemiFooter from '../components/SemiFooter'
 
 const Container = styled.div`
   display: flex;
@@ -28,6 +29,7 @@ function CurriculumPage() {
       <WhiteFour />
       <WhiteFive />
       <WhitePlus />
+      <SemiFooter />
     </Container>
   )
 }

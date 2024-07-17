@@ -31,12 +31,12 @@ const NumberIcon = styled.div`
   background-color: black;
   color: white;
   font-size: 15px;
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   margin-right: 10px;
 `;
 
 const TitleText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 24px;
   padding-bottom: 7px;
   border-bottom: 1px solid #000;
@@ -44,7 +44,7 @@ const TitleText = styled.div`
 
 const TitleColorText = styled.div`
   color: #0f4abe;
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 24px;
   padding-bottom: 7px;
   border-bottom: 1px solid #000;
@@ -63,14 +63,14 @@ const MindsetImage = styled.img`
 
 
 const DetailText = styled.div`
-  font-family: "Pretendard-Regular";
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 5px;
 `;
 
 const DetailColorText = styled.div`
   color: #0f4abe;
-  font-family: "Pretendard-SemiBold";
+  font-weight: 600;
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 10px;

@@ -20,7 +20,7 @@ const IntroTextContainer = styled.div`
 `;
 
 const IntroBolderText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 28px;
   margin-bottom: 20px;
   border-bottom: 1px solid #202594;
@@ -29,14 +29,13 @@ const IntroBolderText = styled.div`
 `;
 
 const IntroText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 20px;
   margin-bottom: 7px;
   color: #202594;
 `;
 
 const DetailText = styled.div`
-  font-family: "Pretendard-Regular";
   font-size: 16px;
   margin-bottom: 5px;
   text-align: center;
@@ -57,21 +56,21 @@ const StepBox = styled.div`
 `;
 
 const StepNumber = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 80px;
   margin-bottom: 15px;
   ${(props) => props.color && `color: ${props.color};`}
 `;
 
 const StepTitle = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 24px;
   margin-bottom: 25px;
   text-align: center;
 `;
 
 const StepDescription = styled.div`
-  font-family: "Pretendard-Light";
+  font-weight: 300;
   font-size: 16px;
   text-align: center;
   line-height: 1.5;
@@ -82,19 +81,11 @@ function SelectionProcess() {
     <Container>
       <IntroTextContainer>
         <IntroBolderText>철저한 검증으로 선발된 전문가</IntroBolderText>
-        <IntroText>
-          학생부종합전형으로 SKY에 합격한
-        </IntroText>
-        <IntroText>
-          인문, 사회, 자연, 공학 계열 선생님들
-        </IntroText>
+        <IntroText>학생부종합전형으로 SKY에 합격한</IntroText>
+        <IntroText>인문, 사회, 자연, 공학 계열 선생님들</IntroText>
       </IntroTextContainer>
-      <DetailText>
-        최신 입시 트렌드를 섭렵한
-      </DetailText>
-      <DetailText>
-        철저한 검증으로 선발된 인원들로 수업을 진행합니다
-      </DetailText>
+      <DetailText>최신 입시 트렌드를 섭렵한</DetailText>
+      <DetailText>철저한 검증으로 선발된 인원들로 수업을 진행합니다</DetailText>
       <StepContainer>
         <StepBox>
           <StepNumber color="#006DE2">1</StepNumber>
@@ -128,7 +119,7 @@ function SelectionProcess() {
           <StepDescription>
             시범 강의, 생기부 분석 테스트,
             <br />
-            학종메이트 교육 과정 
+            학종메이트 교육 과정
             <br />
             이해도 테스트 등
             <br />

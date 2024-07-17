@@ -23,12 +23,12 @@ const MainTextContainer = styled.div`
 `;
 
 const MainText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 28px;
 `;
 
 const MainColorText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 28px;
   color: #202594;
   margin-left: 7px;
@@ -40,13 +40,13 @@ const DetailContainer = styled.div`
 `;
 
 const DetailText = styled.div`
-  font-family: "Pretendard-Medium";
+  font-weight: 500;
   font-size: 20px;
   margin-bottom: 15px;
 `;
 
 const DetailColorText = styled.div`
-  font-family: "Pretendard-SemiBold";
+  font-weight: 600;
   font-size: 20px;
   color: #202594;
   margin-left: 7px;
@@ -86,7 +86,6 @@ function MainIntro() {
       </TextContainer>
 
       <MainImage src={MainSearch} alt="main-search" />
-
     </MainIntroContainer>
   );
 }

@@ -40,7 +40,7 @@ const OtherLinkContainer = styled.div`
 
 const OtherLink = styled(Link)`
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #202594;
   padding: 12px 12px;
   text-decoration: none;

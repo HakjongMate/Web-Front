@@ -11,7 +11,7 @@ const PageContainer = styled.div`
 `;
 
 const Title = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 24px;
   margin-bottom: 10px;
   border-bottom: 1px solid #333;
@@ -19,7 +19,7 @@ const Title = styled.div`
 `;
 
 const Subtitle = styled.div`
-  font-family: "Pretendard-Regular";
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 30px;
   text-align: center;
@@ -37,7 +37,7 @@ const InputGroup = styled.div`
 
 const Label = styled.label`
   display: block;
-  font-family: "Pretendard-SemiBold";
+  font-weight: 600;
   font-size: 16px;
   color: #202594;
   margin-bottom: 10px;
@@ -49,7 +49,7 @@ const Input = styled.input`
   background-color: #f6f7fc;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-family: "Pretendard-Light";
+  font-weight: 300;
   font-size: 14px;
 `;
 
@@ -59,7 +59,7 @@ const TextArea = styled.textarea`
   border: 1px solid #ddd;
   background-color: #f6f7fc;
   border-radius: 5px;
-  font-family: "Pretendard-Light";
+  font-weight: 300;
   font-size: 14px;
   resize: vertical;
   min-height: 100px;
@@ -73,7 +73,7 @@ const SubmitButton = styled.button`
   color: white;
   border: none;
   border-radius: 4px;
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;

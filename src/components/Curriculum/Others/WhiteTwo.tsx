@@ -30,12 +30,12 @@ const NumberCircle = styled.div`
   background-color: #0f4abe;
   color: white;
   font-size: 15px;
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   margin-right: 10px;
 `;
 
 const Title = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   font-size: 22px;
   color: #0f4abe;
   border-bottom: 1px solid #202594;
@@ -43,7 +43,6 @@ const Title = styled.div`
 `;
 
 const HighlightedText = styled.div`
-  font-family: "Pretendard-Medium";
   font-size: 18px;
   color: #0f4abe;
   line-height: 1.5;
@@ -52,7 +51,7 @@ const HighlightedText = styled.div`
 `;
 
 const Content = styled.div`
-  font-family: "Pretendard-Regular";
+  font-weight: 400;
   font-size: 16px;
   margin-top: 8px;
   line-height: 1.5;

@@ -31,13 +31,11 @@ const IntroTextContainer = styled.div`
 `;
 
 const IntroText = styled.div`
-  font-family: "Pretendard-Bold";
   font-size: 30px;
   margin-bottom: 7px;
 `;
 
 const IntroBolderText = styled.div`
-  font-family: "Pretendard-Bold";
   font-size: 30px;
   margin-bottom: 7px;
   border-bottom: 1px solid #202594;
@@ -53,13 +51,13 @@ const DetailContainer = styled.div`
 `;
 
 const DetailText = styled.div`
-  font-family: "Pretendard-Regular";
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 5px;
 `;
 
 const BoldText = styled.div`
-  font-family: "Pretendard-Bold";
+  font-weight: 700;
   align-self: center;
   font-size: 24px;
   color: #202594;
