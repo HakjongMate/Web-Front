@@ -51,7 +51,7 @@ const StepContainer = styled.div`
   margin-top: 30px;
 
   // 모바일 환경의 경우 2*2로 변경
-  @media (max-width: 425px) {
+  @media (max-width: 480px) {
     gap: 5px;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -75,7 +75,7 @@ const StepNumber = styled.div`
     margin-bottom: 10px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 480px) {
     font-size: 40px;
   }
 `;
@@ -91,7 +91,7 @@ const StepTitle = styled.div`
     margin-bottom: 15px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 480px) {
     font-size: 16px;
     margin-bottom: 10px;
   }
@@ -107,7 +107,7 @@ const StepDescription = styled.div`
     font-size: 14px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 480px) {
     font-size: 12px;
   }
 `;

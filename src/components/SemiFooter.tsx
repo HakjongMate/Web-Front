@@ -38,8 +38,13 @@ const Title = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 480px) {
     font-size: 18px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -67,10 +72,18 @@ const StyledButton = styled(Link)`
     margin-top: 30px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 480px) {
     font-size: 14px;
     width: 100px;
     padding: 6px 12px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+    width: 90px;
+    padding: 5px 10px;
+    margin-top: 15px;
   }
 `;
 
