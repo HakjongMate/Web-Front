@@ -17,7 +17,7 @@ function IntroducePage() {
   return (
     <HomePageContainer>
       <GradationIntro />
-      {/* <DetailIntro /> */}
+      <DetailIntro />
       {/* <EmphasizeIntro /> */}
     </HomePageContainer>
   )
