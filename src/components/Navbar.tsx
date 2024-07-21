@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import IconBlue from '../assets/icons/HakjongMate_Blue.png';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import IconBlue from "../assets/icons/HakjongMate_Blue.png";
 
 interface SideMenuProps {
   isOpen: boolean;
@@ -71,15 +71,15 @@ const Bar = styled.div`
   margin: 4px 0;
 
   @media (max-width: 768px) {
-  width: 20px;
-  height: 3px;
-  margin: 3px 0;
+    width: 20px;
+    height: 3px;
+    margin: 3px 0;
   }
 
   @media (max-width: 425px) {
-  width: 15px;
-  height: 2px;
-  margin: 2px 0;
+    width: 15px;
+    height: 2px;
+    margin: 2px 0;
   }
 `;
 
@@ -95,7 +95,7 @@ const OtherLinkContainer = styled.div`
 
 const SideMenu = styled.div.attrs<SideMenuProps>(({ isOpen }) => ({
   style: {
-    transform: isOpen ? 'translateX(0)' : 'translateX(100%)',
+    transform: isOpen ? "translateX(0)" : "translateX(100%)",
   },
 }))<SideMenuProps>`
   display: flex;
@@ -109,6 +109,7 @@ const SideMenu = styled.div.attrs<SideMenuProps>(({ isOpen }) => ({
   padding: 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease-in-out;
+  z-index: 1000;
 `;
 
 const CloseButton = styled.div`
@@ -157,22 +158,17 @@ function Navbar() {
       </MenuButton>
 
       <OtherLinkContainer>
-        <OtherLink to="/introduce">
-          학종메이트 소개
-        </OtherLink>
-        <OtherLink to="/curriculum">
-          커리큘럼
-        </OtherLink>
-        <OtherLink to="/review">
-          수업 후기
-        </OtherLink>
-        <OtherLink to="/apply">
-          수업 신청
-        </OtherLink>
+        <OtherLink to="/introduce">학종메이트 소개</OtherLink>
+        <OtherLink to="/curriculum">커리큘럼</OtherLink>
+        <OtherLink to="/review">수업 후기</OtherLink>
+        <OtherLink to="/apply">수업 신청</OtherLink>
       </OtherLinkContainer>
 
       <SideMenu isOpen={isOpen}>
         <CloseButton onClick={toggleMenu}>×</CloseButton>
+        <OtherLink to="/" onClick={toggleMenu}>
+          홈으로
+        </OtherLink>
         <OtherLink to="/introduce" onClick={toggleMenu}>
           학종메이트 소개
         </OtherLink>
