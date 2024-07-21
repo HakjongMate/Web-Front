@@ -10,7 +10,16 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 50px 50px 0 50px;
-  width: 1080px;
+  width: 100%;
+  max-width: 1080px;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px 0 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 10px 0 10px;
+  }
 `;
 
 const IntroTextContainer = styled.div`
@@ -25,6 +34,14 @@ const IntroText = styled.div`
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 7px;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
 
 const IntroBolderText = styled.div`
@@ -33,6 +50,14 @@ const IntroBolderText = styled.div`
   margin-bottom: 7px;
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
 
 const DetailContainer = styled.div`
@@ -41,24 +66,61 @@ const DetailContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 15px;
+  }
 `;
 
 const DetailText = styled.div`
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 5px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const BoldContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 7px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 320px) {
+    flex-direction: column;
+    align-items: center;
+  };
 `;
 
 const BoldText = styled.div`
   font-weight: 600;
   align-self: center;
   font-size: 22px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const BoldColorText = styled.div`
@@ -67,6 +129,15 @@ const BoldColorText = styled.div`
   font-size: 22px;
   margin: 0 10px;
   color: #202594;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin: 0 5px;
+  }
 `;
 
 function Mindset() {

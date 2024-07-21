@@ -23,7 +23,7 @@ function HomePage() {
     <HomePageContainer>
       <MainIntro />
       <Review />
-      {/* <Mindset /> */}
+      <Mindset />
       {/* <SelectionProcess /> */}
       {/* <CurriculumIntro /> */}
       {/* <SemiFooter /> */}
