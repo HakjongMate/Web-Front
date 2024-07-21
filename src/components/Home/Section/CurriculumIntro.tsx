@@ -44,6 +44,7 @@ const IntroTextContainer = styled.div`
 
   @media (max-width: 480px) {
     align-items: center;
+    margin-bottom: 15px;
   }
 `;
 
@@ -52,13 +53,14 @@ const IntroBolderText = styled.div`
   font-size: 24px;
   margin-bottom: 7px;
   color: #202594;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid #202594;
   padding-bottom: 10px;
 
   @media (max-width: 480px) {
     font-size: 20px;
     text-align: center;
     padding-bottom: 5px;
+    margin-bottom: 5px;
   }
 `;
 
