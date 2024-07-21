@@ -24,7 +24,7 @@ function HomePage() {
       <MainIntro />
       <Review />
       <Mindset />
-      {/* <SelectionProcess /> */}
+      <SelectionProcess />
       {/* <CurriculumIntro /> */}
       {/* <SemiFooter /> */}
       {/* <FloatingButton /> */}
