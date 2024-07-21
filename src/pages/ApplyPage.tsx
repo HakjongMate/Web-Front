@@ -1,13 +1,15 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
+  height: 80vh;
   align-items: center;
   padding-top: 50px;
   padding-bottom: 100px;
   background-color: #f6f7fc;
+  font-family: 'Pretendard';
 `;
 
 const Title = styled.div`
@@ -51,6 +53,7 @@ const Input = styled.input`
   border-radius: 5px;
   font-weight: 300;
   font-size: 14px;
+  font-family: 'Pretendard';
 `;
 
 const TextArea = styled.textarea`
@@ -61,13 +64,20 @@ const TextArea = styled.textarea`
   border-radius: 5px;
   font-weight: 300;
   font-size: 14px;
-  resize: vertical;
+  font-family: 'Pretendard';
   min-height: 100px;
   resize: none;
 `;
 
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
 const SubmitButton = styled.button`
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   padding: 12px;
   background-color: #3730a3;
   color: white;
@@ -78,6 +88,7 @@ const SubmitButton = styled.button`
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 20px;
+  text-align: center;
 
   &:hover {
     background-color: #2b2583;
@@ -165,7 +176,9 @@ function ApplyPage() {
             placeholder="원하시는 상담의 내용을 입력해주세요"
           />
         </InputGroup>
-        <SubmitButton type="submit">상담 신청하기</SubmitButton>
+        <ButtonWrapper>
+          <SubmitButton type="submit">상담 신청하기</SubmitButton>
+        </ButtonWrapper>
       </FormContainer>
     </PageContainer>
   );

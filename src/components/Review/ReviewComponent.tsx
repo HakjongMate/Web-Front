@@ -59,6 +59,7 @@ const Content = styled.div`
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  text-align: justify;
 `;
 
 const ReviewComponent: React.FC<ReviewComponentProps> = ({ review }) => {
