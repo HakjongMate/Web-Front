@@ -22,12 +22,12 @@ function HomePage() {
   return (
     <HomePageContainer>
       <MainIntro />
-      <Review />
-      <Mindset />
-      <SelectionProcess />
-      <CurriculumIntro />
-      <SemiFooter />
-      <FloatingButton />
+      {/* <Review /> */}
+      {/* <Mindset /> */}
+      {/* <SelectionProcess /> */}
+      {/* <CurriculumIntro /> */}
+      {/* <SemiFooter /> */}
+      {/* <FloatingButton /> */}
     </HomePageContainer>
   );
 }
