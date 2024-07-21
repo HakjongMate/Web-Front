@@ -1,4 +1,3 @@
-// ThirdMind.tsx
 import React from "react";
 import styled from "styled-components";
 import MindImageOne from "../../../assets/icons/Home/mind_three.png";
@@ -33,13 +32,16 @@ const TitleContainer = styled.div`
   align-items: center;
   margin-bottom: 30px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 20px;
   }
+`;
 
-  @media (max-width: 480px) {
-    margin-bottom: 15px;
-  }
+const TitleRow = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const NumberIcon = styled.div`
@@ -55,17 +57,16 @@ const NumberIcon = styled.div`
   font-family: "Pretendard-Bold";
   font-weight: 700;
   margin-right: 10px;
+  align-self: flex-start;
 
   @media (max-width: 768px) {
     margin-right: 5px;
-    margin-bottom: 10px;
     width: 20px;
     height: 20px;
     font-size: 12px;
   }
 
   @media (max-width: 480px) {
-    margin-bottom: 5px;
     width: 16px;
     height: 16px;
     font-size: 10px;
@@ -75,33 +76,33 @@ const NumberIcon = styled.div`
 const TitleText = styled.div`
   font-weight: 700;
   font-size: 24px;
-  padding-bottom: 7px;
-  border-bottom: 1px solid #000;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #000;
   }
 
   @media (max-width: 480px) {
     font-size: 16px;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 `;
 
-const TitleColorText = styled.div`
+const TitleColorText = styled(TitleText)`
   color: #0f4abe;
-  font-weight: 700;
-  font-size: 24px;
+`;
+
+const UnderlinedTitleText = styled(TitleText)`
   padding-bottom: 7px;
   border-bottom: 1px solid #000;
+  padding-left: 5px;
 
-  @media (max-width: 768px) {
-    font-size: 20px;
-    padding-bottom: 5px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 16px;
+  @media (max-width: 425px) {
+    margin-top: 5px;
+    margin-left: 23px;
+    padding-left: 0px;
   }
 `;
 
@@ -191,14 +192,28 @@ const MobileDetailColorText = styled(DetailColorText)`
   }
 `;
 
+const TitleTextContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+`;
+
 function ThirdMind() {
   return (
     <Container>
       <TitleContainer>
-        <NumberIcon>3</NumberIcon>
-        <TitleText>생활기록부의 목표는 {"["}</TitleText>
-        <TitleColorText>내신에서 드러나지 않는</TitleColorText>
-        <TitleText>{"]"} 학생의 우수성을 보이기 위한 지표입니다.</TitleText>
+        <TitleRow>
+          <NumberIcon>3</NumberIcon>
+          <TitleText>생활기록부의 목표는 {"["}</TitleText>
+          <TitleColorText>내신에서 드러나지 않는</TitleColorText>
+          <TitleText>{"]"}</TitleText>
+        </TitleRow>
+        <UnderlinedTitleText>
+          학생의 우수성을 보이기 위한 지표입니다.
+        </UnderlinedTitleText>
       </TitleContainer>
 
       <ImageContainer>
@@ -226,7 +241,7 @@ function ThirdMind() {
         단순히 점수를 합산하는 방식으로 평가하지 못했던
       </MobileDetailColorText>
       <MobileDetailColorText>
-        학생들의 학업능력과 잠재력을 평가하여{"\n"} 
+        학생들의 학업능력과 잠재력을 평가하여{"\n"}
         "우수한 학생"을 선발한다는 것입니다.
       </MobileDetailColorText>
     </Container>
