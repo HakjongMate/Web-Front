@@ -26,8 +26,8 @@ function HomePage() {
       <Mindset />
       <SelectionProcess />
       <CurriculumIntro />
-      {/* <SemiFooter /> */}
-      {/* <FloatingButton /> */}
+      <SemiFooter />
+      <FloatingButton />
     </HomePageContainer>
   );
 }
