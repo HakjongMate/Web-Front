@@ -20,9 +20,33 @@ const Button = styled.button`
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition: background-color 0.3s ease, right 0.3s ease;
 
   &:hover {
     background-color: #0d3a9e;
+  }
+
+  @media (max-width: 1200px) {
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    bottom: 30px;
+    right: 15px;
+    width: 70px;
+    height: 70px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    bottom: 20px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
   }
 `;
 

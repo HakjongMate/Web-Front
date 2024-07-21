@@ -7,7 +7,7 @@ import NaverBlog from "../assets/icons/naverblog.png";
 
 const Container = styled.div`
   width: 100%;
-  background-color: #F6F7FC;
+  background-color: #f6f7fc;
 `;
 
 const FooterContainer = styled.div`
@@ -15,7 +15,11 @@ const FooterContainer = styled.div`
   max-width: 1080px;
   margin: 0 auto;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 40px 20px;
+
+  @media (max-width: 768px) {
+    padding: 20px 15px;
+  }
 `;
 
 const IconContainer = styled.div`
@@ -34,6 +38,14 @@ const LogoName = styled.div`
   font-family: "Pretendard";
   font-weight: 200;
   color: #202594;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
 `;
 
 const InformationContainer = styled.div`
@@ -48,6 +60,14 @@ const Information = styled.div`
   display: flex;
   font-size: 15px;
   font-weight: 200;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
 `;
 
 const LinkContainer = styled.div`

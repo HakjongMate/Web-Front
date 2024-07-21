@@ -6,7 +6,8 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1080px;
+  width: 100%;
+  max-width: 1080px;
   margin-top: 30px;
   padding-bottom: 50px;
 `;
@@ -23,7 +24,7 @@ const IntroBolderText = styled.div`
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #202594;
+  border-bottom: 1px solid #000;
   padding-bottom: 10px;
   text-align: center;
 `;
@@ -42,17 +43,25 @@ const DetailText = styled.div`
 `;
 
 const StepContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   max-width: 1080px;
+  width: 100%;
   margin-top: 30px;
+
+  // 모바일 환경의 경우 2*2로 변경
+  @media (max-width: 480px) {
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const StepBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 245px;
+  width: 100%;
 `;
 
 const StepNumber = styled.div`
@@ -60,13 +69,32 @@ const StepNumber = styled.div`
   font-size: 80px;
   margin-bottom: 15px;
   ${(props) => props.color && `color: ${props.color};`}
+
+  @media (max-width: 768px) {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 40px;
+  }
 `;
 
 const StepTitle = styled.div`
   font-weight: 700;
   font-size: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 `;
 
 const StepDescription = styled.div`
@@ -74,6 +102,14 @@ const StepDescription = styled.div`
   font-size: 16px;
   text-align: center;
   line-height: 1.5;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 
 function SelectionProcess() {
