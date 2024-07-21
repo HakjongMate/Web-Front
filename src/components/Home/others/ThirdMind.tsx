@@ -32,7 +32,7 @@ const TitleContainer = styled.div`
   align-items: center;
   margin-bottom: 30px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
@@ -42,7 +42,9 @@ const TitleContainer = styled.div`
 const TitleRow = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 `;
+
 
 const NumberIcon = styled.div`
   display: flex;
@@ -73,20 +75,20 @@ const NumberIcon = styled.div`
   }
 `;
 
-const TitleText = styled.div`
+const TitleText = styled.span`
   font-weight: 700;
   font-size: 24px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 7px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     font-size: 20px;
-    padding-bottom: 7px;
-    border-bottom: 1px solid #000;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
   @media (max-width: 480px) {
     font-size: 16px;
-    padding-bottom: 0;
-    border-bottom: none;
   }
 `;
 
@@ -94,15 +96,23 @@ const TitleColorText = styled(TitleText)`
   color: #0f4abe;
 `;
 
-const UnderlinedTitleText = styled(TitleText)`
-  padding-bottom: 7px;
+const UnderlinedTitleText = styled.div`
+  font-weight: 700;
+  font-size: 24px;
   border-bottom: 1px solid #000;
+  padding-bottom: 7px;
   padding-left: 5px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
+    font-size: 20px;
     margin-top: 5px;
-    margin-left: 23px;
-    padding-left: 0px;
+    margin-left: 28px;
+    padding-left: 0;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    margin-left: 22px;
   }
 `;
 
@@ -192,24 +202,15 @@ const MobileDetailColorText = styled(DetailColorText)`
   }
 `;
 
-const TitleTextContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (max-width: 480px) {
-    flex-direction: column;
-  }
-`;
-
 function ThirdMind() {
   return (
     <Container>
       <TitleContainer>
         <TitleRow>
           <NumberIcon>3</NumberIcon>
-          <TitleText>생활기록부의 목표는 {"["}</TitleText>
+          <TitleText>생활기록부의 목표는 [</TitleText>
           <TitleColorText>내신에서 드러나지 않는</TitleColorText>
-          <TitleText>{"]"}</TitleText>
+          <TitleText>]</TitleText>
         </TitleRow>
         <UnderlinedTitleText>
           학생의 우수성을 보이기 위한 지표입니다.
@@ -228,8 +229,8 @@ function ThirdMind() {
         1등급만 붙을 수 있는 학교추천전형과 다르게
       </MobileDetailText>
       <MobileDetailText>
-        2등급이어도, 심지어는 3등급이어도 {"\n"}"학생부종합전형"으로는 고려대에
-        붙은 경우가 있습니다.
+        2등급이어도, 심지어는 3등급이어도 {"\n"}
+        "학생부종합전형"으로는 고려대에 붙은 경우가 있습니다.
       </MobileDetailText>
 
       <Space />
