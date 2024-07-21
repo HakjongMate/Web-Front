@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import StarIcon from '@mui/icons-material/Star';
+import React from "react";
+import styled from "styled-components";
+import StarIcon from "@mui/icons-material/Star";
 
 interface MainReviewProps {
   id: number;
@@ -16,13 +16,21 @@ const Container = styled.div`
   background-color: #f6f7fc;
   border-radius: 30px;
   padding: 40px 35px;
+  min-height: 230px;
+  width: 100%;
+  max-width: 300px; 
+
+  @media (max-width: 1024px) {
+    max-width: 250px;
+  }
 
   @media (max-width: 768px) {
-    padding: 20px 15px;
+    padding: 20px 20px;
+    min-height: 220px;
   }
 
   @media (max-width: 480px) {
-    padding: 15px 10px;
+    min-height: 150px;
   }
 `;
 
@@ -32,6 +40,10 @@ const TextContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const AuthorText = styled.div`
@@ -64,7 +76,7 @@ const RatingContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 10px; /* 마진 줄임 */
+  margin-bottom: 10px;
 `;
 
 const ContextText = styled.div`
@@ -81,21 +93,36 @@ const ContextText = styled.div`
   }
 `;
 
-function MainReview({ id, rating, author, date, content }: MainReviewProps) {
+const StyledStarIcon = styled(StarIcon)<{ active: boolean }>`
+  color: ${(props) => (props.active ? "#202594" : "#BDBDBD")};
+`;
+
+const MainReview: React.FC<MainReviewProps> = ({
+  id,
+  rating,
+  author,
+  date,
+  content,
+}) => {
   return (
     <Container>
       <TextContainer>
         <AuthorText>{author}</AuthorText>
         <DateText>{date}</DateText>
       </TextContainer>
+
       <RatingContainer>
         {[1, 2, 3, 4, 5].map((star, index) => (
-          <StarIcon key={index} style={{ color: index < rating ? "#202594" : "#BDBDBD", fontSize: "20px" }} /> 
+          <StyledStarIcon
+            key={index}
+            active={index < rating}
+            style={{ fontSize: "20px" }}
+          />
         ))}
       </RatingContainer>
       <ContextText>{content}</ContextText>
     </Container>
   );
-}
+};
 
 export default MainReview;
