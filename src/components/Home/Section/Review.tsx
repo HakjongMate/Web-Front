@@ -31,11 +31,13 @@ const IntroTextContainer = styled.div`
 `;
 
 const IntroText = styled.div`
+  font-weight: 700;
   font-size: 30px;
   margin-bottom: 7px;
 `;
 
 const IntroBolderText = styled.div`
+  font-weight: 700;
   font-size: 30px;
   margin-bottom: 7px;
   border-bottom: 1px solid #202594;

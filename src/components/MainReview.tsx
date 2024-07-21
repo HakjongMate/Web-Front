@@ -30,12 +30,12 @@ const TextContainer = styled.div`
 `;
 
 const AuthorText = styled.div`
-  font-family: "Pretendard-Medium";
+  font-weight: 500;
   font-size: 18px;
 `;
 
 const DateText = styled.div`
-  font-family: "Pretendard-Regular";
+  font-weight: 400;
   font-size: 14px;
 `;
 
