@@ -19,7 +19,12 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 50px 0;
-  width: 1080px;
+  width: 100%;
+  max-width: 1080px;
+
+  @media (max-width: 1024px) {
+    padding: 40px 20px;
+  }
 `;
 
 const IntroTextContainer = styled.div`
@@ -34,14 +39,32 @@ const IntroText = styled.div`
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 7px;
+
+  @media (max-width: 1024px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const IntroBolderText = styled.div`
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 7px;
-  border-bottom: 1px solid #202594;
+  border-bottom: 1px solid #000;
   padding-bottom: 10px;
+
+  @media (max-width: 1024px) {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
 `;
 
 const DetailContainer = styled.div`
@@ -50,12 +73,28 @@ const DetailContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+
+  @media (max-width: 425px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const DetailText = styled.div`
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 5px;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 
 const BoldText = styled.div`
@@ -64,20 +103,46 @@ const BoldText = styled.div`
   font-size: 24px;
   color: #202594;
   margin-bottom: 30px;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+  }
 `;
 
 const ReviewContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-content: center;
-  width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1080px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const ButtonContainer = styled.div`
   margin-top: 20px;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 function Review() {
