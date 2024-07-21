@@ -5,17 +5,26 @@ import { Link } from "react-router-dom";
 const FooterContainer = styled.div`
   width: 100%;
   background-color: #0f4abe;
-  padding: 100px 0;
+  padding: 100px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    padding: 50px 15px;
+  }
 `;
 
 const FooterContent = styled.div`
   display: flex;
   flex-direction: column;
   width: 1080px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+  }
 `;
 
 const Title = styled.div`
@@ -23,6 +32,15 @@ const Title = styled.div`
   font-weight: 600;
   color: white;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
 `;
 
 const StyledButton = styled(Link)`
@@ -36,12 +54,23 @@ const StyledButton = styled(Link)`
   margin-top: 50px;
   background-color: white;
   color: #0f4abe;
-  padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
+
   &:hover {
     background-color: #f0f0f0;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+    width: 100px;
+    padding: 6px 12px;
   }
 `;
 
