@@ -24,6 +24,7 @@ const Title = styled.div`
 
   @media (max-width: 480px) {
     font-size: 20px;
+    line-height: 1.5;
   }
 `;
 
@@ -38,6 +39,9 @@ const TitleLine = styled.div`
     font-size: 20px;
     padding-bottom: 6px;
     margin-bottom: 15px;
+    white-space: pre-wrap;
+    text-align: center;
+    line-height: 1.5;
   }
 `;
 
@@ -133,7 +137,7 @@ function DetailIntro() {
   return (
     <Container>
       <Title>생활기록부,</Title>
-      <TitleLine>내가 챙기지 않는다면 아무도 챙기지 않습니다.</TitleLine>
+      <TitleLine>내가 챙기지 않는다면{"\n"}아무도 챙기지 않습니다.</TitleLine>
       <MobileText>
         휘문고 학급 평균 34명, <br /> 교과 담당 기준 최소 100명 이상. <br />
         교사가 너무 많은 학생의 세특을 담당합니다.
