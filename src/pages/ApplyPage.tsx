@@ -4,19 +4,21 @@ import styled from "styled-components";
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 80vh;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding: 30px 20px;
   background-color: #f6f7fc;
   font-family: 'Pretendard';
+  min-height: calc(100vh - 140px);
+  box-sizing: border-box;
 
   @media (max-width: 768px) {
-    padding: 40px 20px;
+    padding: 25px 15px;
+    min-height: calc(100vh - 120px);
   }
 
   @media (max-width: 480px) {
-    padding: 30px 15px;
+    padding: 20px 10px;
+    min-height: calc(100vh - 250px);
   }
 `;
 
