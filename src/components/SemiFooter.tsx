@@ -23,7 +23,11 @@ const FooterContainer = styled.div`
 const FooterContent = styled.div`
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 1080px;
+
+  @media (max-width: 1024px) {
+    width: 70%;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
