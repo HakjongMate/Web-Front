@@ -22,14 +22,14 @@ function CurriculumPage() {
   return (
     <Container>
       <GradationIntro />
-      <DetailSection />
-      <WhiteOne />
-      <WhiteTwo />
-      <WhiteThree />
-      <WhiteFour />
-      <WhiteFive />
-      <WhitePlus />
-      <SemiFooter />
+      {/* <DetailSection /> */}
+      {/* <WhiteOne /> */}
+      {/* <WhiteTwo /> */}
+      {/* <WhiteThree /> */}
+      {/* <WhiteFour /> */}
+      {/* <WhiteFive /> */}
+      {/* <WhitePlus /> */}
+      {/* <SemiFooter /> */}
     </Container>
   )
 }
