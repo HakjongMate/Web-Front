@@ -15,6 +15,10 @@ const Container = styled.div`
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
 
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+
   @media (max-width: 768px) {
     margin: 20px 0;
     padding: 20px;
@@ -88,7 +92,7 @@ const TitleText = styled.span`
   }
 
   @media (max-width: 480px) {
-    font-size: 16px;
+    font-size: 15px;
   }
 `;
 

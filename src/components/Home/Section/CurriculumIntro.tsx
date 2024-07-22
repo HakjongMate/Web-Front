@@ -49,7 +49,7 @@ const IntroTextContainer = styled.div`
 `;
 
 const IntroBolderText = styled.div`
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   margin-bottom: 7px;
   color: #202594;

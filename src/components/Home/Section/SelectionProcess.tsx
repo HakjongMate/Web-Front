@@ -27,6 +27,10 @@ const IntroBolderText = styled.div`
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
   text-align: center;
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
 const IntroText = styled.div`
