@@ -31,11 +31,8 @@ const GradientText = styled.div`
 
   @media (max-width: 480px) {
     font-size: 20px;
-    margin-bottom: 15px;
-  }
-
-  @media (max-width: 320px) {
     white-space: pre-wrap;
+    margin-bottom: 15px;
   }
 `;
 

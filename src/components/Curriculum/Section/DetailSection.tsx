@@ -34,7 +34,7 @@ const IntroBolderText = styled.div`
   }
 
   @media (max-width: 480px) {
-    font-size: 18px;
+    font-size: 17px;
     padding-bottom: 6px;
     margin-bottom: 10px;
   }
