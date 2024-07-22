@@ -16,6 +16,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #F6F7FC;
+  overflow-x: hidden; 
 `;
 
 function CurriculumPage() {

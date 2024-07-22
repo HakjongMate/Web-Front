@@ -8,8 +8,13 @@ const Container = styled.div`
   padding: 60px 30px;
   background-color: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
-  max-width: 1080px;
   border-radius: 30px;
+  width: 900px;
+
+  @media (max-width: 1024px) {
+    padding: 50px 25px;
+    width: 80%;
+  }
 
   @media (max-width: 768px) {
     padding: 40px 20px;
@@ -63,6 +68,8 @@ const HighlightedText = styled.div`
     font-size: 14px;
     margin-top: 8px;
     margin-bottom: 8px;
+    white-space: pre-wrap;
+    line-height: 1.5;
   }
 `;
 
@@ -87,9 +94,9 @@ const HighlightBoldText = styled.div`
   text-align: center;
   color: #202594;
   line-height: 1.5;
-  white-space: pre-wrap;
-
+  
   @media (max-width: 480px) {
+    white-space: pre-wrap;
     font-size: 18px;
     margin-top: 5px;
   }
@@ -104,6 +111,7 @@ const BoldText = styled.div`
   @media (max-width: 480px) {
     font-size: 18px;
     margin-top: 8px;
+    white-space: pre-wrap;
   }
 `;
 
@@ -132,7 +140,7 @@ const EmphasizeIntro = () => {
       </MobileText>
 
       <HighlightedText>
-        그만큼 '우수한 생활기록부'는 입시에 있어 엄청난 무기가 됩니다.
+        그만큼 '우수한 생활기록부'는{"\n"}입시에 있어 엄청난 무기가 됩니다.
       </HighlightedText>
       <MobileText>
         하지만 많은 분들이 이 생활기록부의 위력을 과소평가하거나,
@@ -141,11 +149,12 @@ const EmphasizeIntro = () => {
       </MobileText>
 
       <MobileText>
-        학종메이트의 수업은 '내가 학창시절로 돌아간다면 {"\n"}
-        나에게 해주고 싶은 이야기'로 구성했습니다.
+        학종메이트의 수업은{"\n"}
+        '내가 학창시절로 돌아간다면 나에게 해주고 싶은 이야기'
+        {"\n"}로 구성했습니다.
       </MobileText>
 
-      <BoldText>아직 임시라는 큰 산을 넘어야 하는 여러분들께,</BoldText>
+      <BoldText>아직 입시라는{"\n"}큰 산을 넘어야 하는 여러분들께,</BoldText>
       <HighlightBoldText>
         학종메이트는 학생의 우수성을 {"\n"}
         최대한 드러낼 수 있는, <br />

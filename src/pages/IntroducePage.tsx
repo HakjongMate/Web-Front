@@ -11,6 +11,7 @@ const HomePageContainer = styled.div`
   justify-content: center;
   background-color: #F6F7FC;
   padding-bottom: 50px;
+  overflow-x: hidden; 
 `;
 
 function IntroducePage() {

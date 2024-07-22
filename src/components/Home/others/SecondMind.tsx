@@ -1,4 +1,3 @@
-// SecondMind.tsx
 import React from "react";
 import styled from "styled-components";
 import MindImage from "../../../assets/icons/Home/mind_two.png";
@@ -14,6 +13,10 @@ const Container = styled.div`
   background-color: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
+
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
 
   @media (max-width: 768px) {
     margin: 20px 0;
@@ -38,6 +41,7 @@ const TitleContainer = styled.div`
 
   @media (max-width: 480px) {
     margin-bottom: 15px;
+    flex-wrap: wrap;
   }
 `;
 
@@ -72,6 +76,8 @@ const NumberIcon = styled.div`
 `;
 
 const TitleText = styled.div`
+  display: flex;
+  flex-direction: row;
   font-weight: 700;
   font-size: 24px;
   padding-bottom: 7px;
@@ -83,7 +89,9 @@ const TitleText = styled.div`
   }
 
   @media (max-width: 480px) {
+    border-bottom: none;
     font-size: 16px;
+    white-space: pre-wrap;
   }
 
   @media (max-width: 320px) {
@@ -104,7 +112,32 @@ const TitleColorText = styled.div`
   }
 
   @media (max-width: 480px) {
+    border-bottom: none;
     font-size: 16px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+`;
+
+const TitleLine = styled.div`
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #000;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    white-space: pre-wrap;
+    margin-left: 20px;
   }
 
   @media (max-width: 320px) {
@@ -198,7 +231,8 @@ function SecondMind() {
         <NumberIcon>2</NumberIcon>
         <TitleText>우수성은 {"["}</TitleText>
         <TitleColorText>높은 내신</TitleColorText>
-        <TitleText>{"]"}에서만 드러나는 것이 아닙니다.</TitleText>
+        <TitleText> {"]"}에서만</TitleText>
+        <TitleLine> 드러나는 것이 아닙니다.</TitleLine>
       </TitleContainer>
 
       <ImageContainer>
@@ -206,10 +240,12 @@ function SecondMind() {
       </ImageContainer>
 
       <MobileDetailText>
-        마찬가지로 2024 서울대학교 학생부종합전형 안내 자료 중{"\n"}일부를 발췌한 것입니다.
+        마찬가지로 2024 서울대학교 학생부종합전형 안내 자료 중{"\n"}일부를
+        발췌한 것입니다.
       </MobileDetailText>
       <MobileDetailText>
-        "학교생활기록부에 기반을 둔 종합적이고 다면적인 평가"로 인재를{"\n"}선발합니다.
+        "학교생활기록부에 기반을 둔 종합적이고 다면적인 평가"로 인재를{"\n"}
+        선발합니다.
       </MobileDetailText>
       <MobileDetailColorText>
         학생부 종합전형은 "생활기록부"를 통해{"\n"}학생의 우수성을 평가합니다.

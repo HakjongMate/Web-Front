@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Button = styled.button`
   position: fixed;
   bottom: 50px;
-  right: calc((100% - 1100px) / 2 - 50px); 
+  right: calc((100% - 1100px) / 2 - 80px); 
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -43,10 +43,14 @@ const Button = styled.button`
 
   @media (max-width: 480px) {
     bottom: 20px;
-    right: 10px;
+    right: 20px;
     width: 60px;
     height: 60px;
     font-size: 12px;
+  }
+
+  @media (max-width: 320px) {
+    white-space: pre-wrap;
   }
 `;
 
@@ -59,7 +63,7 @@ function FloatingButton() {
 
   return (
     <Button onClick={handleClick}>
-      수업 신청
+      수업{"\n"}신청
     </Button>
   );
 }

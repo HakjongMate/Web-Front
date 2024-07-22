@@ -181,12 +181,6 @@ function Navbar() {
         <OtherLink to="/apply" onClick={toggleMenu}>
           수업 신청
         </OtherLink>
-        <OtherLink to="/login" onClick={toggleMenu}>
-          로그인
-        </OtherLink>
-        <OtherLink to="/signup" onClick={toggleMenu}>
-          회원가입
-        </OtherLink>
       </SideMenu>
     </NavbarContainer>
   );
