@@ -12,6 +12,19 @@ const Container = styled.div`
   max-width: 1080px;
   min-width: 900px;
   border-radius: 30px;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    min-width: unset;
+    width: 95%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -19,6 +32,10 @@ const TitleContainer = styled.div`
   flex-direction: row;
   align-items: center;
   margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const NumberCircle = styled.div`
@@ -33,6 +50,13 @@ const NumberCircle = styled.div`
   font-size: 15px;
   font-weight: 700;
   margin-right: 10px;
+
+  @media (max-width: 480px) {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
 `;
 
 const Title = styled.div`
@@ -41,6 +65,10 @@ const Title = styled.div`
   color: #0f4abe;
   border-bottom: 1px solid #202594;
   padding-bottom: 5px;
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 const HighlightedText = styled.div`
@@ -50,6 +78,21 @@ const HighlightedText = styled.div`
   line-height: 1.5;
   margin-bottom: 10px;
   margin-left: 30px;
+
+  @media (max-width: 768px) {
+    margin-left: 15px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    margin-left: 15px;
+    white-space: pre-wrap;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+    margin-left: 10px;
+  }
 `;
 
 const Content = styled.div`
@@ -59,6 +102,21 @@ const Content = styled.div`
   line-height: 1.5;
   margin-bottom: 10px;
   margin-left: 30px;
+
+  @media (max-width: 768px) {
+    margin-left: 15px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin-left: 15px;
+    white-space: pre-wrap;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 12px;
+    margin-left: 10px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -70,6 +128,16 @@ const ImageContainer = styled.div`
 const DetailImage = styled.img`
   width: 480px;
   height: 230px;
+
+  @media (max-width: 768px) {
+    width: 70%;
+    height: auto;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 function WhiteFour() {
@@ -81,20 +149,23 @@ function WhiteFour() {
       </TitleContainer>
 
       <HighlightedText>
-        선생님 사례를 통해 실제 입시 전략에 대한 CASE STUDY를 진행하고, <br />
+        선생님 사례를 통해 실제 입시 전략에 대한{"\n"}CASE STUDY를 진행하고,
+        <br />
         본인의 전략에 대해 고민하는 시간을 가집니다.
       </HighlightedText>
 
       <Content>
-        자율형 사립 고등학교 내신 1.7으로 연세대 면접형, 고려대 특기자 전형에
-        합격한 선생님,
+        자율형 사립 고등학교 내신 1.7으로{"\n"}
+        연세대 면접형, 고려대 특기자 전형에 합격한 선생님,
         <br />
-        탄탄한 생활기록부 관리를 통한 전공 적합성을 어필해 내신 1.7로 서울대에
-        합격한 선생님 등<br />
-        실제 컨설팅을 진행하는 선생님들의 생활기록부 분석본을 제공하며
+        탄탄한 생활기록부 관리를 통한 전공 적합성을{"\n"}
+        어필해 내신 1.7로 서울대에 합격한 선생님 등<br />
+        실제 컨설팅을 진행하는 선생님들의{"\n"}
+        생활기록부 분석본을 제공하며
       </Content>
       <Content>
-        선생님의 입시 전략의 장점과 단점을 분석하며 생기부에 대한 이해 및
+        선생님의 입시 전략의 장점과 단점을{"\n"}
+        분석하며 생기부에 대한 이해 및{"\n"}
         입시전략에 대한 시야를 넓힙니다.
       </Content>
 

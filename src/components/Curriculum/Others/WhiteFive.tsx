@@ -12,6 +12,19 @@ const Container = styled.div`
   max-width: 1080px;
   min-width: 900px;
   border-radius: 30px;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    min-width: unset;
+    width: 95%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -19,6 +32,10 @@ const TitleContainer = styled.div`
   flex-direction: row;
   align-items: center;
   margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const NumberCircle = styled.div`
@@ -33,6 +50,13 @@ const NumberCircle = styled.div`
   font-size: 15px;
   font-weight: 700;
   margin-right: 10px;
+
+  @media (max-width: 480px) {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
 `;
 
 const Title = styled.div`
@@ -41,6 +65,10 @@ const Title = styled.div`
   color: #0f4abe;
   border-bottom: 1px solid #202594;
   padding-bottom: 5px;
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 const HighlightedText = styled.div`
@@ -50,6 +78,21 @@ const HighlightedText = styled.div`
   line-height: 1.5;
   margin-bottom: 10px;
   margin-left: 30px;
+
+  @media (max-width: 768px) {
+    margin-left: 15px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    margin-left: 15px;
+    white-space: pre-wrap;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+    margin-left: 10px;
+  }
 `;
 
 const Content = styled.div`
@@ -59,6 +102,21 @@ const Content = styled.div`
   line-height: 1.5;
   margin-bottom: 10px;
   margin-left: 30px;
+
+  @media (max-width: 768px) {
+    margin-left: 15px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    white-space: pre-wrap;
+    margin-left: 15px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 12px;
+    margin-left: 10px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -69,6 +127,16 @@ const ImageContainer = styled.div`
 const DetailImage = styled.img`
   width: 550px;
   height: 320px;
+
+  @media (max-width: 768px) {
+    width: 70%;
+    height: auto;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 function WhiteFive() {
@@ -80,20 +148,22 @@ function WhiteFive() {
       </TitleContainer>
 
       <HighlightedText>
-        지금까지의 강의내용과 선생님 사례 분석을 토대로 학생의 생기부 상태를
-        진단합니다. <br />
-        학생만의 생활기록부 분석 레포트를 제공하여 맞춤형 입시 전략을 세웁니다.
+        지금까지의 강의내용과 선생님 사례 분석을{"\n"}
+        토대로 학생의 생기부 상태를 진단합니다. <br />
+        학생만의 생활기록부 분석 레포트를 제공하여{"\n"}
+        맞춤형 입시 전략을 세웁니다.
       </HighlightedText>
 
       <Content>
-        자율활동부터 세부능력 특기사항, 행동특성까지 생활기록부를 분석하여
+        자율활동부터 세부능력 특기사항, 행동특성까지{"\n"}
+        생활기록부를 분석하여 현재 학생 생기부의 상태를 수치화하고,
         <br />
-        현재 학생 생기부의 상태를 수치화하고,
-        <br />
-        희망 대학과 학과에 맞는 앞으로의 생활기록부 준비 방향성을 제시합니다.
+        희망 대학과 학과에 맞는 앞으로의 생활기록부{"\n"}
+        준비 방향성을 제시합니다.
       </Content>
       <Content>
-        학생 생기부 분석 결과를 토대로 앞으로의 방향성을 제시합니다.
+        학생 생기부 분석 결과를 토대로{"\n"}
+        앞으로의 방향성을 제시합니다.
       </Content>
 
       <ImageContainer>
