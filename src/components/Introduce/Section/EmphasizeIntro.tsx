@@ -8,8 +8,13 @@ const Container = styled.div`
   padding: 60px 30px;
   background-color: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
-  max-width: 1080px;
   border-radius: 30px;
+  width: 900px;
+
+  @media (max-width: 1024px) {
+    padding: 50px 25px;
+    width: 80%;
+  }
 
   @media (max-width: 768px) {
     padding: 40px 20px;
@@ -87,9 +92,9 @@ const HighlightBoldText = styled.div`
   text-align: center;
   color: #202594;
   line-height: 1.5;
-  white-space: pre-wrap;
-
+  
   @media (max-width: 480px) {
+    white-space: pre-wrap;
     font-size: 18px;
     margin-top: 5px;
   }
