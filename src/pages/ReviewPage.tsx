@@ -19,6 +19,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #f6f7fc;
+  overflow-x: hidden; 
 `;
 
 const Text = styled.div`

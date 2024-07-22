@@ -15,7 +15,8 @@ const HomePageContainer = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #F6F7FC;
-  position: relative; 
+  position: relative;
+  overflow-x: hidden; 
 `;
 
 function HomePage() {

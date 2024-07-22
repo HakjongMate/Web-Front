@@ -10,6 +10,7 @@ const PageContainer = styled.div`
   font-family: 'Pretendard';
   min-height: calc(100vh - 140px);
   box-sizing: border-box;
+  overflow-x: hidden; 
 
   @media (max-width: 768px) {
     padding: 25px 15px;
