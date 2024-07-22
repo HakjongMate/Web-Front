@@ -48,6 +48,10 @@ const Button = styled.button`
     height: 60px;
     font-size: 12px;
   }
+
+  @media (max-width: 320px) {
+    white-space: pre-wrap;
+  }
 `;
 
 function FloatingButton() {
@@ -59,7 +63,7 @@ function FloatingButton() {
 
   return (
     <Button onClick={handleClick}>
-      수업 신청
+      수업{"\n"}신청
     </Button>
   );
 }
