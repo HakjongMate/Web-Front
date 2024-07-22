@@ -83,6 +83,7 @@ const ContextText = styled.div`
   font-family: "Pretendard-Light";
   font-size: 16px;
   line-height: 1.5;
+  text-align: justify;
 
   @media (max-width: 768px) {
     font-size: 14px;
