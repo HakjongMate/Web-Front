@@ -5,21 +5,25 @@ import { Link } from "react-router-dom";
 const FooterContainer = styled.div`
   width: 100%;
   background-color: #0f4abe;
-  padding: 100px 20px;
+  padding: 100px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1024px) {
+    padding: 80px 0px;
+  }
+
   @media (max-width: 768px) {
-    padding: 50px 15px;
+    padding: 50px 0px;
   }
 `;
 
 const FooterContent = styled.div`
   display: flex;
   flex-direction: column;
-  width: 1080px;
+  width: 70%;
 
   @media (max-width: 768px) {
     width: 100%;

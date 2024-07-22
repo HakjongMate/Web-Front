@@ -4,12 +4,22 @@ import styled from "styled-components";
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 80vh;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding: 30px 20px;
   background-color: #f6f7fc;
   font-family: 'Pretendard';
+  min-height: calc(100vh - 140px);
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 25px 15px;
+    min-height: calc(100vh - 120px);
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 10px;
+    min-height: calc(100vh - 250px);
+  }
 `;
 
 const Title = styled.div`
@@ -18,6 +28,10 @@ const Title = styled.div`
   margin-bottom: 10px;
   border-bottom: 1px solid #333;
   padding: 5px;
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
 
 const Subtitle = styled.div`
@@ -26,15 +40,27 @@ const Subtitle = styled.div`
   margin-bottom: 30px;
   text-align: center;
   line-height: 1.5;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 const FormContainer = styled.form`
   width: 100%;
   max-width: 400px;
+
+  @media (max-width: 480px) {
+    max-width: 100%;
+  }
 `;
 
 const InputGroup = styled.div`
   margin-bottom: 20px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 15px;
+  }
 `;
 
 const Label = styled.label`
@@ -43,6 +69,11 @@ const Label = styled.label`
   font-size: 16px;
   color: #202594;
   margin-bottom: 10px;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
 `;
 
 const Input = styled.input`
@@ -54,6 +85,12 @@ const Input = styled.input`
   font-weight: 300;
   font-size: 14px;
   font-family: 'Pretendard';
+
+  @media (max-width: 480px) {
+    width: calc(100% - 30px);
+    padding: 8px 12px;
+    font-size: 12px;
+  }
 `;
 
 const TextArea = styled.textarea`
@@ -67,17 +104,28 @@ const TextArea = styled.textarea`
   font-family: 'Pretendard';
   min-height: 100px;
   resize: none;
+
+  @media (max-width: 480px) {
+    width: calc(100% - 30px);
+    padding: 8px 12px;
+    font-size: 12px;
+    min-height: 80px;
+  }
 `;
 
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-left: 15px;
+
+  @media (max-width: 480px) {
+    margin-left: 0;
+  }
 `;
 
 const SubmitButton = styled.button`
   width: 100%;
-  max-width: 400px;
   padding: 12px;
   background-color: #3730a3;
   color: white;
@@ -92,6 +140,11 @@ const SubmitButton = styled.button`
 
   &:hover {
     background-color: #2b2583;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    padding: 10px;
   }
 `;
 

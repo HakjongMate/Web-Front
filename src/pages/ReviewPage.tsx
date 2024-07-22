@@ -26,6 +26,21 @@ const Text = styled.div`
   font-size: 24px;
   margin-top: 50px;
   margin-bottom: 30px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    white-space: pre-line;
+    line-height: 1.5;
+  }
 `;
 
 const ReviewContainer = styled.div`
@@ -36,6 +51,16 @@ const ReviewContainer = styled.div`
   max-width: 800px;
   padding: 0 20px;
   margin-bottom: 100px;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
 `;
 
 const ReviewPage = () => {
@@ -44,7 +69,7 @@ const ReviewPage = () => {
   return (
     <Container>
       <GradationIntro />
-      <Text>실제 컨설팅을 진행한 후 작성해주신 소중한 후기들입니다.</Text>
+      <Text>실제 컨설팅을 진행한 후 {"\n"}작성해주신 소중한 후기들입니다.</Text>
       <ReviewContainer>
         {reviews.map((review) => (
           <ReviewComponent key={review.id} review={review} />
