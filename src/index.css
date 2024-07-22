@@ -56,4 +56,14 @@
 /* 기본 폰트 설정 */
 body {
   font-family: 'Pretendard', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
