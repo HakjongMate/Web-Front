@@ -71,7 +71,6 @@ const MainColorText = styled.div`
   font-weight: 700;
   font-size: 24px;
   color: #202594;
-  margin-left: 7px;
 
   @media (max-width: 768px) {
     font-size: 20px;
@@ -154,9 +153,8 @@ function MainIntro() {
     <MainIntroContainer>
       <TextContainer>
         <MainTextContainer>
-          <MainText>학종메이트에는</MainText>
-          <MainColorText>꼼수, 편법</MainColorText>
-          <MainText>이 없습니다.</MainText>
+          <MainColorText>학종메이트</MainColorText>
+          <MainText>, 생활기록부의 새로운 기준</MainText>
         </MainTextContainer>
 
         <DetailContainer>
