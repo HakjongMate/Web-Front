@@ -149,12 +149,36 @@ const SubmitButton = styled.button`
   }
 `;
 
+const CheckboxContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 15px;
+  }
+`;
+
+const Checkbox = styled.input`
+  margin-right: 10px;
+`;
+
+const CheckboxLabel = styled.label`
+  font-size: 14px;
+  color: #202594;
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
+`;
+
 function ApplyPage() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     content: "",
   });
+  const [isAgreed, setIsAgreed] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -166,30 +190,13 @@ function ApplyPage() {
     }));
   };
 
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsAgreed(e.target.checked);
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    // 유효성 검사
-    if (!formData.name) {
-      alert("성함을 입력해주세요.");
-      return;
-    }
-    if (!formData.phone) {
-      alert("연락처를 입력해주세요.");
-      return;
-    }
-    if (!formData.content) {
-      alert("상담내용을 입력해주세요.");
-      return;
-    }
-
-    // 모든 필드가 채워졌을 때
-    alert(
-      `신청이 완료되었습니다.\n\n성함: ${formData.name}\n연락처: ${formData.phone}\n상담내용: ${formData.content}`
-    );
-
-    // 폼 초기화
-    setFormData({ name: "", phone: "", content: "" });
+    // 여기에 유효성 검사를 나중에 추가할 수 있습니다.
   };
 
   return (
@@ -230,6 +237,14 @@ function ApplyPage() {
             placeholder="원하시는 상담의 내용을 입력해주세요"
           />
         </InputGroup>
+        <CheckboxContainer>
+          <Checkbox
+            type="checkbox"
+            checked={isAgreed}
+            onChange={handleCheckboxChange}
+          />
+          <CheckboxLabel>개인정보 수집 내용에 동의합니다.</CheckboxLabel>
+        </CheckboxContainer>
         <ButtonWrapper>
           <SubmitButton type="submit">상담 신청하기</SubmitButton>
         </ButtonWrapper>
