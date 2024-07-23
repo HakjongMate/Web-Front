@@ -126,7 +126,7 @@ const ImageContainer = styled.div`
 
 const DetailImage = styled.img`
   width: 500px;
-  height: 310px;
+  height: 290px;
 
   @media (max-width: 768px) {
     width: 70%;
