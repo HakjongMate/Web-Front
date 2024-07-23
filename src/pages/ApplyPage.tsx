@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import toast, { Toaster } from 'react-hot-toast';
 
 const PageContainer = styled.div`
   display: flex;
@@ -166,6 +167,7 @@ const Checkbox = styled.input`
 const CheckboxLabel = styled.label`
   font-size: 14px;
   color: #202594;
+  cursor: pointer;
 
   @media (max-width: 480px) {
     font-size: 12px;
@@ -196,7 +198,40 @@ function ApplyPage() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // 여기에 유효성 검사를 나중에 추가할 수 있습니다.
+
+    const phoneRegex = /^(?:\d{3}-\d{4}-\d{4}|\d{11})$/;
+
+    if (!formData.name) {
+      alert("성함을 입력해주세요.");
+      return;
+    }
+    if (!formData.phone) {
+      alert("연락처를 입력해주세요.");
+      return;
+    }
+    if (!phoneRegex.test(formData.phone)) {
+      alert("올바른 연락처를 입력해주세요. 입력 양식: 000-0000-0000 또는 00000000000");
+      return;
+    }
+    if (!formData.content) {
+      alert("상담내용을 입력해주세요.");
+      return;
+    }
+    if (!isAgreed) {
+      alert("개인정보 수집 내용에 동의해주세요.");
+      return;
+    }
+
+    toast.success("신청이 완료되었습니다.", {
+      style: {
+        maxWidth: "1000px",
+        width: "300px",
+        fontSize: "20px",
+      },
+    });
+
+    setFormData({ name: "", phone: "", content: "" });
+    setIsAgreed(false);
   };
 
   return (
@@ -242,13 +277,15 @@ function ApplyPage() {
             type="checkbox"
             checked={isAgreed}
             onChange={handleCheckboxChange}
+            id="agreeCheckbox"
           />
-          <CheckboxLabel>개인정보 수집 내용에 동의합니다.</CheckboxLabel>
+          <CheckboxLabel htmlFor="agreeCheckbox">개인정보 수집 내용에 동의합니다.</CheckboxLabel>
         </CheckboxContainer>
         <ButtonWrapper>
           <SubmitButton type="submit">상담 신청하기</SubmitButton>
         </ButtonWrapper>
       </FormContainer>
+      <Toaster />
     </PageContainer>
   );
 }
