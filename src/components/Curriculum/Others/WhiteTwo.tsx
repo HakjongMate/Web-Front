@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import SuccessImage from "../../../assets/icons/Curriculum/success.png";
 
 const Container = styled.div`
   display: flex;
@@ -117,6 +118,27 @@ const Content = styled.div`
   }
 `;
 
+const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+`;
+
+const DetailImage = styled.img`
+  width: 500px;
+  height: 310px;
+
+  @media (max-width: 768px) {
+    width: 70%;
+    height: auto;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: auto;
+  }
+`;
+
 function WhiteTwo() {
   return (
     <Container>
@@ -144,6 +166,10 @@ function WhiteTwo() {
         특히 세특의 위계를 학습하며{"\n"}
         우수한 세특으로 생기부를 디자인할 수 있도록 돕습니다.
       </Content>
+
+      <ImageContainer>
+        <DetailImage src={SuccessImage} />
+      </ImageContainer>
     </Container>
   );
 }
