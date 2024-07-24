@@ -78,7 +78,7 @@ const CheckboxContainer = styled.div`
   }
 `;
 
-const Checkbox = styled.input`
+const Checkbox = styled.input.attrs({ type: 'checkbox' })`
   margin-right: 10px;
 `;
 
@@ -197,9 +197,8 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   onChange,
 }) => {
   return (
-    <CheckboxContainer onClick={onChange}>
+    <CheckboxContainer>
       <Checkbox
-        type="checkbox"
         checked={isChecked}
         onChange={onChange}
         id="agreeCheckbox"
