@@ -72,9 +72,9 @@ const ApplyForm: React.FC = () => {
     }
 
     // 환경 변수 값 확인
-    console.log("SERVICE_ID:", process.env.REACT_APP_EMAILJS_SERVICE_ID);
-    console.log("TEMPLATE_ID:", process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
-    console.log("PUBLIC_KEY:", process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+    // console.log("SERVICE_ID:", process.env.REACT_APP_EMAILJS_SERVICE_ID);
+    // console.log("TEMPLATE_ID:", process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+    // console.log("PUBLIC_KEY:", process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
 
     // EmailJS를 사용하여 사용자가 신청한 상담 내용을 관리자에게 전송
     // EmailJS 설정은 https://www.emailjs.com/ 참고
