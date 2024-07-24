@@ -152,6 +152,7 @@ const SubmitButton = styled.button`
 
 const CheckboxContainer = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 
@@ -192,8 +193,8 @@ function ApplyPage() {
     }));
   };
 
-  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setIsAgreed(e.target.checked);
+  const handleCheckboxChange = () => {
+    setIsAgreed((prev) => !prev);
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -210,7 +211,7 @@ function ApplyPage() {
       return;
     }
     if (!phoneRegex.test(formData.phone)) {
-      alert("올바른 연락처를 입력해주세요. 입력 양식: 000-0000-0000 또는 00000000000");
+      alert("올바른 연락처 형식을 입력해주세요. 예: 000-0000-0000 또는 00000000000");
       return;
     }
     if (!formData.content) {
@@ -272,7 +273,7 @@ function ApplyPage() {
             placeholder="원하시는 상담의 내용을 입력해주세요"
           />
         </InputGroup>
-        <CheckboxContainer>
+        <CheckboxContainer onClick={handleCheckboxChange}>
           <Checkbox
             type="checkbox"
             checked={isAgreed}
