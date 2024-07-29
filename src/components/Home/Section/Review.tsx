@@ -190,7 +190,7 @@ const Review: React.FC = () => {
             학종메이트만의 "학생부 종합전형 마인드셋 3가지"와
           </DetailText>
           <DetailText>
-            자체 연구﹒개발한 "세특 필승 공식 7가지"로 지도합니다.
+            자체 연구﹒개발한 "세특 필승 SUCCESS 공식"로 지도합니다.
           </DetailText>
         </DetailContainer>
 
