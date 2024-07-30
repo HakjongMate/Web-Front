@@ -158,19 +158,19 @@ function MainIntro() {
         </MainTextContainer>
 
         <DetailContainer>
-          <DetailText>결국 대학에 맞는</DetailText>
-          <DetailColorText>"우수한 학생"</DetailColorText>
+          <DetailText>결국 대학에 가려면</DetailText>
+          <DetailColorText>'우수한 학생'</DetailColorText>
           <DetailText>이 되어야 합니다.</DetailText>
         </DetailContainer>
         <DetailContainer>
-          <DetailText>학종메이트는 우수한 학생을 위한</DetailText>
-          <DetailColorText>올바른 방향</DetailColorText>
-          <DetailText>을 제시합니다.</DetailText>
+          <DetailText>학종메이트는 학종에</DetailText>
+          <DetailColorText>'왕도는 없다'</DetailColorText>
+          <DetailText>고 생각합니다.</DetailText>
         </DetailContainer>
         <DetailContainer>
-          <DetailText>학종메이트는 학종에</DetailText>
-          <DetailColorText>"왕도는 없다"</DetailColorText>
-          <DetailText>라고 생각합니다.</DetailText>
+          <DetailText>우수한 학생이 되기 위한</DetailText>
+          <DetailColorText>'올바른 방향'</DetailColorText>
+          <DetailText>을 제시합니다.</DetailText>
         </DetailContainer>
       </TextContainer>
 

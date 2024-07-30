@@ -66,7 +66,7 @@ const GradationIntro = () => {
         학종메이트만의 {"\n"}
         "학생부 종합전형 마인드셋 3가지"와<br />
         자체 연구 · 개발한{"\n"}
-        "새특 필승 SUCCESS 공식"로 지도합니다.
+        "세특 필승 SUCCESS 공식"로 지도합니다.
       </Subtitle>
     </GradientContainer>
   );
